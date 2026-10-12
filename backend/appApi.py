@@ -9,7 +9,7 @@ import tensorflow as tf
 # === Config ===
 SEG_LEN = 300               # segment length for model (samples)
 NUM_LEADS = 2
-SAMPLE_RATE = 500           # Hz (as you requested)
+SAMPLE_RATE = 360           # MIT-BIH sampling rate
 MAX_DURATION_MIN = 5
 MAX_SAMPLES = SAMPLE_RATE * 60 * MAX_DURATION_MIN  # 150,000 samples
 
