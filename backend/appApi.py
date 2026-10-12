@@ -11,7 +11,7 @@ SEG_LEN = 300               # segment length for model (samples)
 NUM_LEADS = 2
 SAMPLE_RATE = 360           # MIT-BIH sampling rate
 MAX_DURATION_MIN = 5
-MAX_SAMPLES = SAMPLE_RATE * 60 * MAX_DURATION_MIN  # 150,000 samples
+MAX_SAMPLES = SAMPLE_RATE * 60 * MAX_DURATION_MIN  # 108,000 samples
 
 # === Utility: sharp QRS bandpass ===
 def bandpass_qrs(signal, fs, lowcut=5.0, highcut=25.0, order=2):
@@ -65,7 +65,7 @@ async def predict_mat(file: UploadFile = File(...)):
         full = ecg[0]
         filtered = full  # already bandpassed 5–25 Hz
 
-        min_dist = int(0.6 * SAMPLE_RATE)
+        min_dist = int(0.3 * SAMPLE_RATE)  # 0.3 s matches the RR check below, allowing up to 200 BPM
         prom = 0.4 * np.std(filtered)
         peaks, _ = find_peaks(filtered, distance=min_dist, prominence=prom)
 
