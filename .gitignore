@@ -1,0 +1,34 @@
+# Flutter / Dart build output
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+**/ios/Flutter/.last_build_id
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+*.iml
+.idea/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Environment files
+.env
+.env.*
+
+# Training data (MIT-BIH .mat files, not included)
+*.mat
+backend/training/
+
+# OS files
+.DS_Store
+Thumbs.db

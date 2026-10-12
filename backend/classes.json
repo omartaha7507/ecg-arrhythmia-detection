@@ -1,0 +1,18 @@
+[
+  "Normal Beat",
+  "Atrial premature beat (APB)",
+  "Aberrated atrial premature beat",
+  "Nodal (junctional) premature beat",
+  "Supraventricular premature beat",
+  "Ventricular escape beat",
+  "Left bundle branch block beat (LBBB)",
+  "Signal artifact / noise",
+  "Right bundle branch block beat (RBBB)",
+  "Fusion of ventricular and normal beat",
+  "Unknown beat / Unclassified",
+  "Atrial escape beat",
+  "Premature ventricular contraction (PVC)",
+  "Ventricular escape beat",
+  "Fusion of ventricular and normal beat",
+  "Paced beat"
+]
